@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:drawable/bottom_bar"
+              android:padding="20dp"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="40"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_red_light"
+        >
+        <TextView
+            android:layout_weight="30"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Find Me"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@android:drawable/dialog_holo_dark_frame"
+
+            />
+        <LinearLayout
+            android:layout_weight="10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="90"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            >
+            <TextView
+                android:layout_weight="10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                />
+            <TextView
+                android:layout_weight="10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_weight="10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_weight="10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:background="@drawable/backgroundlayer"
+                android:paddingLeft="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:paddingRight="5dp"
+                    >
+                    <ImageView
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent"
+                        android:background="@android:drawable/ic_menu_call"
+                        />
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edittext"
+                    android:id="@+id/phone"
+                    android:inputType="phone"
+                    android:hint="phone"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:background="@drawable/backgroundlayer"
+                android:weightSum="10"
+                >
+
+                <ImageView
+                    android:layout_weight="8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:drawable/ic_lock_lock"
+
+                    />
+                <EditText
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edittext"
+                    android:id="@+id/password"
+                    android:hint="Password"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_weight="10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_weight="10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_weight="10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <LinearLayout
+                android:layout_weight="10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:layout_weight="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttonbackground"
+                    android:text="LOGIN"
+                    android:id="@+id/logenter"
+                    />
+                <Button
+                    android:layout_weight="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttonbackground"
+                    android:text="Forget Password"
+                    android:id="@+id/forgotpassword"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
